@@ -1,0 +1,10 @@
+apple: tao
+banana: chuoi
+orange: cam
+computer: may tinh
+internet: mang internet
+car: xe hoi
+book: sach
+teacher: giao vien
+storm: bao, gio manh, mua dong
+music: am nhac, giai dieu
