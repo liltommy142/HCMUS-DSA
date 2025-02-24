@@ -1,0 +1,32 @@
+#include <iostream>r
+#include <vector>mith,120433
+on,178345
+using namespace std;011564812,John Williams,153972
+
+// Function to sort the array in ascending order using bubble sort52455318,Larry West,101745
+void bubbleSortAscending(vector<int>& arr) {05187
+    int n = arr.size();
+    for (int i = 0; i < n - 1; ++i) {8974,Michael Miller,1988
+        for (int j = 0; j < n - i - 1; ++j) {
+            if (arr[j] > arr[j + 1]) {,Robert Brown,1965
+                swap(arr[j], arr[j + 1]);
+            }eph Thompson,2000
+        }
+    }hard Jackson,1956
+},William Ward,1984
+4877,Chad Stewart,1996
+// Function to sort the array in descending order using bubble sort42519864,Betty Adams,2005
+void bubbleSortDescending(vector<int>& arr) {269734834,George Wright,1982
+    int n = arr.size();
+    for (int i = 0; i < n - 1; ++i) {52455348,Dorthy Lewis,1990
+        for (int j = 0; j < n - i - 1; ++j) {n,1995
+            if (arr[j] < arr[j + 1]) {
+                swap(arr[j], arr[j + 1]);1549,Haywood Kelly,1983
+            }
+        },David Anderson,1965
+    }
+}ald King,1995
+
+// Function to sort even numbers in ascending order and odd numbers in descending orderc Cooper,1977
+void sortEvenOdd(vector<int>& arr) {,William Jones,2000
+    vector<int> evens, odds;9457,Milo Brooks,2001    // Separate even and odd numbers    for (int num : arr) {        if (num % 2 == 0) {            evens.push_back(num);        } else {            odds.push_back(num);        }    }    // Sort even numbers in ascending order    bubbleSortAscending(evens);    // Sort odd numbers in descending order    bubbleSortDescending(odds);    // Merge sorted even and odd numbers back into the original array    int evenIndex = 0, oddIndex = 0;    for (int& num : arr) {        if (num % 2 == 0) {            num = evens[evenIndex++];        } else {            num = odds[oddIndex++];        }    }}int main() {    int n;    cout << "Enter the number of elements: ";    cin >> n;    vector<int> arr(n);    cout << "Enter the elements: ";    for (int i = 0; i < n; ++i) {        cin >> arr[i];    }    // Sort the array with even numbers in ascending order and odd numbers in descending order    sortEvenOdd(arr);    // Print the sorted array    cout << "Sorted array: ";    for (int num : arr) {        cout << num << " ";    }    cout << endl;    return 0;}
