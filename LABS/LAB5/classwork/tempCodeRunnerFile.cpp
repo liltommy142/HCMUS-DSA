@@ -1,0 +1,1 @@
+table.resize(capacity, nullptr);
