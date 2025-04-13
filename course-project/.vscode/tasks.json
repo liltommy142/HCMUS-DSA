@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Project",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "d:/Study/HCMUS-DSA/course-project/19127616/source/main.cpp",
+                "d:/Study/HCMUS-DSA/course-project/19127616/source/utils.cpp",
+                "-o",
+                "d:/Study/HCMUS-DSA/course-project/19127616/source/main.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
